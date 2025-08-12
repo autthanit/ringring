@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+nav{
+    padding :1rem;
+    background-color : #4CAF50 ;
+    
+}
+
+.nav-con {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0 1rem;
+}
+
+.menu li a {
+    color:#fff;
+    text-decoration: none;
+}
+
+.hero{
+   background-color: #F5DEB3;
+}
+
+.hero-con {
+    display : flex;
+}
+
+.hero-info {
+    width: 100%;
+    padding: 2rem;
+}
+
+.hero-info h3 {
+    font-size: 2rem
+}
+
+.hero-info p {
+    margin: 1rem 0;
+}
+
+.hero-info .hero-btn {
+    display: inline-block;
+    background-color: rgb(33, 145, 5);
+    color:#fff;
+    padding: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero-img img{
+    width: 80%;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+
+.blog-con {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  max-width: 1140px;   /* จำกัดความกว้างสูงสุด */
+  margin: 0 auto;      /* จัดกึ่งกลางหน้าจอ */
+  padding: 2rem 1rem;
+  justify-items: center;  /* จัดให้แต่ละ grid item อยู่กลางคอลัมน์ */
+  /* ถ้าอยากเว้นบรรทัดเยอะขึ้นลองเพิ่ม gap ตามนี้ */
+  row-gap: 2rem;
+}
+
+.blog-item {
+  width: 100%;       /* เต็มช่อง grid แต่ไม่เกิน max-width ของ .blog-con */
+  max-width: 350px;  /* กำหนดขนาด max ของแต่ละกล่อง */
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.blog-item img {
+  width: 100%;
+  border-radius: 10px;
+  height: auto;
+}
+
+.blog-item p {
+  margin: 1rem 0;
+}
+
+.blog-item a {
+  display: inline-block;
+  color: #fff;
+  background-color: rgb(33, 145, 5);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.footer-top{
+    margin-top: 2rem;
+    padding: 3rem;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer-top-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+}
+
+.footer-top-item-con {
+    display : flex;
+    margin: 1rem 0;
+}
+
+.footer-top-item-con .date{
+    background-color: #fff;
+    color: #333;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.footer-top-item:nth-child(2) h4{
+    margin-bottom: 1rem;
+}
+
+.footer-top-item:nth-child(3) h4{
+    margin-bottom: 1rem;
+}
+
+.footer-bottom{
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+body {
+  font-family: "Sarabun", sans-serif;
+}
+head {
+  font-family: "Sarabun", sans-serif;
+}
+
+section#services {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  section#services h2 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #4caf50;
+  }
+  .service-item {
+    background-color: #e8f5e9;
+    border-radius: 12px;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .service-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  }
+  .service-item h3 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    color: #2e7d32;
+  }
+  .service-item p {
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: #33691e;
+  }
+  @media (max-width: 600px) {
+    section#services {
+      padding: 0 15px;
+    }
+    .service-item {
+      padding: 20px 15px;
+    }
+  }
+  .product-page {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #e8f5e9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 30px;
+  }
+  .product-page h1 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    color: #4caf50;
+    text-align: center;
+  }
+  .product-gallery {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .product-gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  }
+  .product-info {
+    padding: 0 10px;
+  }
+  .price {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2e7d32;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #33691e;
+    text-align: center;
+  }
+  .btn-buy {
+    display: block;
+    width: 200px;
+    margin: 0 auto 30px auto;
+    padding: 14px 0;
+    background-color: #4caf50;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px 12px rgba(76,175,80,0.6);
+    transition: background-color 0.3s ease;
+  }
+  .btn-buy:hover {
+    background-color: #388e3c;
+  }
+  .reviews {
+    background-color: #c8e6c9;
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .reviews h2 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #2e7d32;
+    text-align: center;
+  }
+  .review-item {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #a5d6a7;
+  }
+  .review-item:last-child {
+    border-bottom: none;
+  }
+  .reviewer {
+    font-weight: 600;
+    color: #33691e;
+  }
+  .review-text {
+    font-style: italic;
+    color: #2e7d32;
+  }
+  @media(max-width: 600px){
+    .product-page {
+      padding: 20px 15px;
+    }
+    .btn-buy {
+      width: 100%;
+    }
+}
+
+.center-img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%; /* ปรับขนาดภาพไม่เกินกล่อง */
+      height: auto;
+      border-radius: 20px;
+    }
+
+.buy-btn {
+  display: inline-block;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+  background-color: #388e3c;
+}
+   
